@@ -20,7 +20,6 @@ public class Leaderboard {
     @Column(name = "highest_points")
     private Long highestPoint ;
 
-    @OneToMany(mappedBy = "leaderboard")
-    private Set<Player> players;
+
 
 }
