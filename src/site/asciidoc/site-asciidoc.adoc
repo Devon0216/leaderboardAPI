@@ -1,0 +1,4 @@
+== The site asciidoc folder
+
+This folder is used to house the documentation for the project.
+The asciidoc maven plugin uses this folder as its source to generate the asciidoc web and pdf output.

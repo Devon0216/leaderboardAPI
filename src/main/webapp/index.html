@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <style type="text/css">
+                table.comicGreen {
+                  font-family: "Comic Sans MS", cursive, sans-serif;
+                  border: 2px solid #4F7849;
+                  background-color: #EEEEEE;
+                  width: 100%;
+                  text-align: center;
+                  border-collapse: collapse;
+                }
+                table.comicGreen td {
+                  border: 1px solid #4F7849;
+                  padding: 3px 2px;
+                }
+                table.comicGreen tbody td {
+                  font-size: 19px;
+                  font-weight: bold;
+                  color: #4F7849;
+                }
+                table.comicGreen tr:nth-child(even) {
+                  background: #CEE0CC;
+                }
+                table.comicGreen thead {
+                  font-size: 21px;
+                  font-weight: bold;
+                  color: #FFFFFF;
+                  background: #4F7849;
+                  background: -moz-linear-gradient(top, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+                  background: -webkit-linear-gradient(top, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+                  background: linear-gradient(to bottom, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+                  border-top: 1px solid #444444;
+                }
+        </style>
+    </head>
+    <body>
+        <table class="comicGreen">
+            <thead>
+                <tr><td colspan="2" align="center">Service Information</td></tr>
+            </thead>
+            <tbody>
+                <tr><td>project.artifactId</td><td>${project.artifactId}</td></tr>
+                <tr><td>project.version</td><td>${project.version}</td></tr>
+            </tbody>
+
+            <thead>
+                <tr><td colspan="2" align="center">Project Build Properties</td></tr>
+            </thead>
+            <tbody>
+                <tr><td>project.build.dateTime</td><td>${project.build.dateTime}</td></tr>
+                <tr><td>basedir</td><td>${basedir}</td></tr>
+                <tr><td>project.artifact</td><td>${project.artifact}</td></tr>
+                <tr><td>maven.version</td><td>${maven.version}</td></tr>
+                <tr><td>maven.home</td><td>${maven.home}</td></tr>
+                <tr><td>maven.compiler.source</td><td>${maven.compiler.source}</td></tr>
+                <tr><td>maven.compiler.target</td><td>${maven.compiler.target}</td></tr>
+            </tbody>
+
+            <thead>
+                <tr><td colspan="2" align="center">Java Build Properties</td></tr>
+            </thead>
+            <tbody>
+                <tr><td>java.home</td><td>${java.home}</td></tr>
+                <tr><td>java.runtime.version</td><td>${java.runtime.version}</td></tr>
+                <tr><td>java.vm.vendor</td><td>${java.vm.vendor}</td></tr>
+                <tr><td>java.vm.version</td><td>${java.vm.version}</td></tr>
+            </tbody>
+
+            <thead>
+                <tr><td colspan="2" align="center">OS Build Properties</td></tr>
+            </thead>
+            <tbody>
+                <tr><td>os.name</td><td>${os.name}</td></tr>
+                <tr><td>os.version</td><td>${os.version}</td></tr>
+                <tr><td>os.arch</td><td>${os.arch}</td></tr>
+            </tbody>
+
+            <thead>
+                <tr><td colspan="2" align="center">Git Properties</td></tr>
+            </thead>
+            <tbody>
+                <tr><td>git.branch</td><td>${git.branch}</td></tr>
+                <tr><td>git.commit.time</td><td>${git.commit.time}</td></tr>
+                <tr><td>git.commit.id</td><td>${git.commit.id}</td></tr>
+                <tr><td>git.commit.id.describe</td><td>${git.commit.id.describe}</td></tr>
+                <tr><td>git.commit.message.full</td><td>${git.commit.message.full}</td></tr>
+                <tr><td>git.commit.user.name</td><td>${git.commit.user.name}</td></tr>
+                <tr><td>git.commit.user.email</td><td>${git.commit.user.email}</td></tr>
+                <tr><td>git.tags</td><td>${git.tags}</td></tr>
+            </tbody>
+        </table>
+    </body>
+</html>

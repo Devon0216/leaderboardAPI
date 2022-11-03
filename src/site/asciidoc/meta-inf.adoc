@@ -1,0 +1,5 @@
+== The resources META-INF folder
+
+This folder contains the beans.xml file which is required to bootstrap CDI so that you can use @Inject.
+If this file is removed, the @Inject will be ignored and you might encounter a null pointer exception.
+

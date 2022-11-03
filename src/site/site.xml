@@ -1,0 +1,9 @@
+<project>
+    <body>
+        <menu ref="reports" inherit="top"/>
+        <menu ref="modules"/>
+        <menu name="AsciiDocs">
+            <item href="mainadoc.html" name="Service Docs" />
+        </menu>
+    </body>
+</project>

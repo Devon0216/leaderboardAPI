@@ -1,0 +1,18 @@
+== Release Notes
+
+=== 1.3.0
+
+* Added a method to get the FEC Booked Information
+* Added a method to get the Deal Information by Deal Reference
+
+=== 1.2.0
+
+* Changed stub generation to load wsdl from jar for faster bootstrapping of client
+* Added connection and request timeout control to client
+* Added a builder approach to the client, where the client will be dynamically updated when "on-the-fly" changes occur (endpoint, keystore or timeout). Only updated areas are refreshed, the rest of the client remains cached.
+* Wrapped various checked exceptions in a client runtime exception as each exception cannot really be handled and to keep the interface constant
+* Added git.properties file for maintenance purposes
+
+=== 1.1.0
+
+* Initial version of client

@@ -1,0 +1,4 @@
+== The site folder
+
+This folder is used by the maven site plugin to generate a website for the project with maven related info.
+

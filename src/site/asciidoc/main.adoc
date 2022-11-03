@@ -1,0 +1,20 @@
+= Nedbank Service Template
+Doc Writer <doc.writer@example.org>
+2014-09-09
+:revnumber: {project-version}
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: ../../main/java]
+
+include::release-notes.adoc[]
+
+include::sample-java.adoc[]
+
+include::liberty-config.adoc[]
+
+include::meta-inf.adoc[]
+
+include::site.adoc[]
+
+include::site-asciidoc.adoc[]
+

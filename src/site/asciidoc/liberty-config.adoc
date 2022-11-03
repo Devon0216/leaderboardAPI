@@ -1,0 +1,5 @@
+== The liberty config folder
+
+This folder contains the server configuration file and can also contain the jvm.options file.
+These are used when liberty is setup in the target folder to testing and should not be removed.
+

@@ -1,0 +1,31 @@
+<server description="liberty" onConflict="Replace">
+    <!-- Requires liberty server installed through nedj-liberty-server -->
+    <!-- This must be the first entry in the server xml otherwise overrides will not work -->
+    <include optional="true" location="${server.config.dir}/baseServer.xml" />
+
+    <!-- Postgres coffee-shop-db definition -->
+    <dataSource id="DefaultDataSource"
+                jndiName="jdbc/nfpe"
+                jdbcDriverRef="postgresql-driver"
+                type="javax.sql.ConnectionPoolDataSource"
+                transactional="true">
+
+        <properties serverName="localhost"
+                    portNumber="5432"
+                    databaseName="leaderboard"
+                    user="postgres"
+                    password="mysecretpassword"/>
+    </dataSource>
+
+    <jdbcDriver id="postgresql-driver"
+                javax.sql.XADataSource="org.postgresql.xa.PGXADataSource"
+                javax.sql.ConnectionPoolDataSource="org.postgresql.ds.PGConnectionPoolDataSource"
+                libraryRef="postgresql-library"/>
+
+    <library id="postgresql-library">
+        <fileset id="PostgreSQLFileset" dir="C:\Users\bbdnet2758\.m2\repository\org\postgresql\postgresql\42.5.0"
+                 includes="postgresql-42.5.0.jar"/>
+    </library>
+
+
+</server>

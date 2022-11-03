@@ -1,0 +1,4 @@
+== Sample Java Files
+
+The App class in the base package is used for any JAX-RS configuration required
+
