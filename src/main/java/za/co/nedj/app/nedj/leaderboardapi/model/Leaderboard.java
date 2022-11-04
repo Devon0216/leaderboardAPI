@@ -1,9 +1,8 @@
 package za.co.nedj.app.nedj.leaderboardapi.model;
 
 import lombok.*;
-
 import javax.persistence.*;
-import java.util.Set;
+
 
 @Data
 @NoArgsConstructor
@@ -19,6 +18,7 @@ public class Leaderboard {
     private String playerNames ;
     @Column(name = "highest_points")
     private Long highestPoint ;
+
 
 
 

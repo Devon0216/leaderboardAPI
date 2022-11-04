@@ -38,19 +38,19 @@ public class PlayerRest {
     @POST
     @Path("/player")
     public Response addPlayer(Player player) {
-        return Response.status(Response.Status.OK).entity(dataService.insertStudent(player)).build();
+        return Response.status(Response.Status.OK).entity(dataService.insertPlayer(player)).build();
     }
 
     @PUT
     @Path("/player")
     public Response updatePlayer(Player player) {
-        return Response.status(Response.Status.OK).entity(dataService.updateStudent(player)).build();
+        return Response.status(Response.Status.OK).entity(dataService.updatePlayer(player)).build();
     }
 
     @DELETE
     @Path("/{playerId}/player")
     public Response deletePlayer(@PathParam("playerId") Long playerId) {
-        return Response.status(Response.Status.OK).entity(dataService.deleteStudent(playerId)).build();
+        return Response.status(Response.Status.OK).entity(dataService.deletePlayer(playerId)).build();
     }
 
 
