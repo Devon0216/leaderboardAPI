@@ -1,7 +1,6 @@
 package za.co.nedj.app.nedj.leaderboardapi.model;
 
 import lombok.*;
-
 import javax.persistence.*;
 
 @Data
@@ -25,6 +24,6 @@ public class Player {
     @Column(name = "highest_points")
     private Long highestPoint ;
 
-    @ManyToOne(fetch=FetchType.LAZY)
-    private Leaderboard leaderboard;
+    @ManyToOne()
+    private Leaderboard leaderboard ;
 }
