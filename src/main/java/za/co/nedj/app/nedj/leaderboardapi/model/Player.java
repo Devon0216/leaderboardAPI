@@ -11,7 +11,8 @@ import javax.persistence.*;
 @Entity
 public class Player {
     @Id
-    @Generated
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.Identity)
     private long id ;
     @Column(name = "name")
     private String name ;
@@ -24,6 +25,7 @@ public class Player {
     @Column(name = "highest_points")
     private Long highestPoint ;
 
-    @ManyToOne()
+    @ManyToOne
+    @JoinColumn(name = "leader_board")
     private Leaderboard leaderboard ;
 }
