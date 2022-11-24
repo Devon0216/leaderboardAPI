@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Optional;
 
-@Path("/")
+@Path("")
 @Api(value = "player API")
 @Produces(MediaType.APPLICATION_JSON)
 @Stateless

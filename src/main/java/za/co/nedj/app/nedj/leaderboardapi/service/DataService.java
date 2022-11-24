@@ -21,7 +21,7 @@ public class DataService {
 
 
     private static final String LEADERBOARD_GET_BY_ID_QUERY = "SELECT * FROM Leaderboard WHERE player_id = ?";
-    private static final String LEADERBOARD_GET_TOP_PLAYERS_QUERY = "SELECT* FROM (SELECT *, row_number() over " +
+    private static final String LEADERBOARD_GET_TOP_PLAYERS_QUERY = "SELECT * FROM (SELECT *, row_number() over " +
             "(order by highest_points desc) FROM Leaderboard) Leaderboard WHERE row_number <= 10";
 
 

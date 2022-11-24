@@ -4,7 +4,7 @@
 
     <groupId>za.co.nedj.nedj</groupId>
     <artifactId>nedj-service-leaderboardapi</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <description>nedj-service-leaderboardapi</description>
 
